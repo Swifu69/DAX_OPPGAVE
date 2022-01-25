@@ -67,4 +67,4 @@ setTimeout(() => {
     userInput = "";
     luckyInput.value = "";
   }, 60 * 1000);
-}, 60 - new Date().getSeconds() * 1000);
+}, (60 - new Date().getSeconds()) * 1000);
