@@ -71,7 +71,7 @@ luckyForm.addEventListener("submit", (e) => {
 
 setTimeout(() => {
   setInterval(() => {
-    let RANDOM_AFTER = Math.ceil(Math.random() * 4);
+    let RANDOM_AFTER = Math.ceil(Math.random() * 49);
       fart.play().catch(err => {
         if (err instanceof DOMException) {
           // user hasn't touched the site
@@ -85,5 +85,5 @@ setTimeout(() => {
     luckyField.textContent = RANDOM_AFTER;
     userInput = "";
     luckyInput.value = "";
-  }, 2 * 1000);
-}, 60 - new Date().getSeconds() * 1000);
+  }, 60 * 1000);
+}, (60 - new Date().getSeconds()) * 1000);
