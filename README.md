@@ -11,6 +11,6 @@ https://dox.swifu.wtf
 
 ## ^^ 
 
-klikk her for å se på nettsiden.
+klikk over på linken for å se prosjekten på nettsiden.
 
 Nettsiden blir oppdatert hver gang repositorien blir oppgatert. 
