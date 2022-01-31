@@ -22,3 +22,13 @@ Nettsiden blir oppdatert hver gang repositorien blir oppgatert.
 |--|--------|-----------|
 |10.12.8.2| Windows Server| pain.fortnite.pain|
 |10.12.8.64| Ubuntu Server| dax.fortnite.pain|
+
+#Raport 
+
+## Maskiner
+
+Det er to maskiner. En av de er en Windows Server med DNS og DHCP som håndterer den andre maskinen som er ubuntu server. Det har blit installert ngix på ubuntu serveren for å kunne hoste nettsiden på dax.fortnite.pain. Vis du bruker global protect så kan du gå til 10.12.8.64 for å kunne se den også.
+
+## Resultat
+
+Alt fungerete som det skulle. Jeg hadde litt problemer med timeren men det fikset jeg til slutt. 
