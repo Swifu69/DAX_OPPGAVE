@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <section id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">ACCEPT</span>
@@ -16,30 +15,36 @@
       </div>
     </section>
 
-    <p id="greeting"></p>
-<section class="name-wrapper">
-    
-    <form id="form">
-      <p>Type in your name</p>
-      <input id="input" placeholder="Master Baiter"/> <br />
-    </form> 
-  </section>
-  <section class="lucky-wrapper">
+    <h1 id="greeting"></h1>
+    <section class="name-wrapper">
+      <form id="form">
+        <p>Type in your name</p>
+        <input
+          id="input"
+          placeholder="Master Baiter"
+          required
+          autocomplete="off"
+        />
+        <br />
+      </form>
+    </section>
+    <section class="lucky-wrapper">
+      <form id="lucky">
+        <p>Your Lucky Number is:</p>
+        <p id="luckyField"></p>
+        <p>Type in your lucky number up to 50!</p>
+        <input
+          id="luckyNumber"
+          placeholder="Some Number"
+          onkeydown="javascript: return event.keyCode == 69 ? false : true"
+          type="number"
+        />
+      </form>
+    </section>
 
-    <form id="lucky">
-      <p>Your Lucky Number is:</p>
-      <p id="luckyField"></p>
-      <p>Type in your lucky number up to 50!</p>
-      <input id="luckyNumber" placeholder="Some Number"/>
-    </form>
-  </section>
-  
-
-    <p>Takk til alle som la til navnet sitt</p>
-    <table id="table" cellpadding="0" cellspacing="0" border="0">
-      <th>PERSONER</th>
-    </table>
-  
+    <section id="table-wrapper">
+      <table id="table" class="styled-table"></table>
+    </section>
     <script src="app.js" type="module"></script>
   </body>
 </html>
