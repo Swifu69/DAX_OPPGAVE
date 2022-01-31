@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 form{
     position: relative;
     padding: 1%;
+    
+      
+  
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    
+}
+
+#luckyField{
+  font-size: 3rem;
+  font-family: Montserrat, sans-serif;
+  color: #F50057;
+}
+
+input{
+  width: 20rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 
@@ -34,6 +55,43 @@ table{
     color: #000000;
     border-bottom: solid 1px rgba(255,255,255,0.1);
   }
+  
+  .name-wrapper{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .name-wrapper div{
+    width: 100px;
+  height: 100px;
+  }
+
+  .lucky-wrapper{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .lucky-wrapper div{
+    width: 100px;
+  height: 100px;
+  }
+
+  .table-wrapper{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .table-wrapper div{
+    width: 100px;
+  height: 100px;
+  }
+
   
   
   /* demo styles */

@@ -5,15 +5,17 @@ import {
   doc,
   getDocs,
   onSnapshot,
+  query
 } from "./firestore.js";
 const FORM = document.getElementById("form");
-let label = document.getElementById("label");
 let input = document.getElementById("input");
 const table = document.getElementById("table");
 const feedback = document.getElementById("greeting");
 
 const MODAL = document.getElementById("myModal");
 const SPAN = document.getElementsByClassName("close")[0];
+
+
 
 window.onload = ()=> {
   MODAL.style.display = "block";
@@ -34,12 +36,15 @@ names.forEach((name) => {
   table.innerHTML += `<td>${name}<td>`;
 });
 
+
+
 FORM.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const DOC_REF = await addDoc(collection(db, "Names"), {
     name: input.value,
-  });
+});
+
 
   feedback.textContent = `Thank you for joining the server ${input.value}`;
   input.value = "";
@@ -87,3 +92,4 @@ setTimeout(() => {
     luckyInput.value = "";
   }, 60 * 1000);
 }, (60 - new Date().getSeconds()) * 1000);
+

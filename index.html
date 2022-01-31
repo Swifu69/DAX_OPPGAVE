@@ -9,31 +9,37 @@
   </head>
   <body>
 
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
+    <section id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">ACCEPT</span>
         <p>We use cookies to improve the user experience</p>
       </div>
-    
-    </div>
+    </section>
 
     <p id="greeting"></p>
+<section class="name-wrapper">
+    
     <form id="form">
       <p>Type in your name</p>
-      <input id="input" /> <label id="label"></label>
-    </form>
+      <input id="input" placeholder="Master Baiter"/> <br />
+    </form> 
+  </section>
+  <section class="lucky-wrapper">
+
     <form id="lucky">
       <p>Your Lucky Number is:</p>
       <p id="luckyField"></p>
       <p>Type in your lucky number up to 50!</p>
-      <input id="luckyNumber" />
+      <input id="luckyNumber" placeholder="Some Number"/>
     </form>
+  </section>
+  
+
     <p>Takk til alle som la til navnet sitt</p>
     <table id="table" cellpadding="0" cellspacing="0" border="0">
       <th>PERSONER</th>
     </table>
+  
     <script src="app.js" type="module"></script>
   </body>
 </html>
